@@ -43,6 +43,9 @@ $('#WS-Connect').on('click', function(e) {
 
     console.log(JSON.stringify(id_init_obj));
     /*初始化链接*/
+    if (ws != null) {
+        ws.close();
+    }
     delete ws;
     ws = new ReconnectingWebSocket("ws://" + host + ":" + port);
     ws.maxReconnectAttempts = 5;
