@@ -1,0 +1,48 @@
+body {
+    overflow-y: scroll;
+    overflow:auto;
+}
+
+.modal {
+    overflow: auto !important;
+}
+
+::selection {
+    background: #333;
+    color: #eee;
+}
+
+::-moz-selection {
+    background: lightblue;
+    color: #fff;
+}
+
+::-webkit-selection {
+    background: deeppink;
+    color: #eee;
+}
+
+div.background-settings {
+    -moz-opacity: 0.3;
+    -khtml-opacity: 0.3;
+    opacity: 0.3;
+}
+
+@font-face {
+    font-family: NothingGoldCanStay;
+    src: url('../fonts/Nothing Gold Can Stay.ttf');
+}
+
+.show-font {
+    font-family: NothingGoldCanStay;
+}
+
+.vertical-center {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}

@@ -1,0 +1,77 @@
+{ /*php存储包（可加至mysql）*/
+    {
+        /*以不同ID为对象*/
+        "1": {
+            "user_ID": "",
+            "user_num": 1,
+            /*以不同平台为对象*/
+            "1": {
+                "client_store": "php obj",
+                "user_platform": "firefox : 53",
+                "user_logintime": ""
+            },
+            "2": {
+                "client": "",
+                "user_platform": "firefox : 53",
+                "user_logintime": ""
+            }
+        },
+        "2": {}
+    },
+    /*数据同步包*/
+    {
+        "user_ID": "",
+        "user_command": "setting sync",
+        alive - temp "command_code": "",
+        "user_data": ""
+    },
+    /*用户列表刷新包*/
+    {
+        "user_command": "",
+        "user_ID": "",
+        "user_num": "",
+        "1": {
+            "user_platform": "firefox : 53",
+            "user_logintime": ""
+        }
+    }
+    /*读取包*/
+    {}
+}
+
+
+{
+    "user_command": "List fresh",
+    "list_store": [{
+        "list_ID": "hello",
+        "list_num": 3,
+        "list_platform": [
+
+        ],
+        "list_logintime": [
+
+        ]
+    }, {
+
+    }]
+
+}
+/*DB_set
+Mode_set
+PWM_cyc_set
+read_cyc_set
+alive_Temp
+*/
+/*P_set
+I_set
+D_set
+Aim_temp*/
+// create table IF NOT EXISTS ×××用户名×××(ID INT NOT NULL,TEMP VARCHAR(20) NOT NULL,P INT NOT NULL,I INT NOT NULL,D INT NOT NULL,TIME VARCHAR(30),PRIMARY KEY (ID));
+// alter table ×××用户名××× modify ID INT auto_increment;
+// select isnull((select top(1) 1 from tableName where conditions), 0) 判断某项是否存在
+// 4cf744c95c5146a41fd8980fe007dbfb469d04aa
+
+// {
+//     "token": "4cf744c95c5146a41fd8980fe007dbfb469d04aa",
+//     "id": "d6fb4779c87cd41999b2497e8d65d49a"
+// }
